@@ -14,16 +14,19 @@
 body {
     margin: 0;
     font-family: 'HankenGrotesk-Medium';
-    font-size: 18px;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper {
-    max-width: 1440px;
+    max-width: 90rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 20px 50px;
-    border-radius: 40px;
-    box-shadow: 8px 8px 28px -10px rgba(66, 68, 90, 1);
+    margin: 1.25rem 3.125rem;
+    border-radius: 2.5rem;
+    box-shadow: 0.5rem 0.5rem 1.75rem -0.625rem rgba(66, 68, 90, 1);
     justify-items: center;
 }
 
@@ -36,15 +39,15 @@ body {
     align-items: center;
     justify-items: center;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-radius: 25px;
+    border-radius: 1.625rem;
 }
 .result .resTitle {
     color: hsl(241, 100%, 89%);
     font-family: 'HankenGrotesk-Bold';
 }
 .result .resNumber {
-    height: 150px;
-    width: 150px;
+    height: 9.375rem;
+    width: 9.375rem;
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
     text-align: center;
@@ -57,12 +60,12 @@ body {
 .resNumber>p:first-of-type{
     color: hsl(0, 0%, 100%);
     font-family: 'HankenGrotesk-ExtraBold';
-    font-size: 54px;
-    padding-top: 25px;
+    font-size: 3.375rem;
+    padding-top: 1.625rem;
 }
 .resNumber>p:last-of-type{
     color:hsl(241, 100%, 89%);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'HankenGrotesk-Bold';
 }
 .result .resType {
@@ -73,7 +76,7 @@ body {
 .result .resDescription {
     color:hsl(241, 100%, 89%);
     text-align: center;
-    padding: 5px 30px 40px 30px;
+    padding: 0.313rem 1.875rem 2.5rem 1.875rem;
 }
 
 .summary {
@@ -105,8 +108,8 @@ body {
     grid-template-rows: 1fr;
     font-family: 'HankenGrotesk-Bold';
     width: 60%;
-    border-radius: 15px;
-    padding: 15px 15px;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
     font-family: 'HankenGrotesk-ExtraBold';
 }
 
@@ -135,15 +138,19 @@ body {
     color:hsl(0, 0%, 100%);
     font-size: 1.1rem;
     font-family: 'HankenGrotesk-Bold';
-    border: 0px;
-    border-radius: 30px;
+    border: 0;
+    border-radius: 1.875rem;
+}
+
+.summary button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 .attribution {
     width: 100%;
     font-size: 0.8rem;
     font-family: 'HankenGrotesk-Medium';
-    padding-top: 10px;
+    padding-top: 0.625rem;
     grid-column: span 2;
     text-align: center;
     color: hsl(224, 30%, 27%);
@@ -155,6 +162,9 @@ body {
 @media screen and (max-width: 980px) and (min-width:375px){
     .wrapper {
         grid-template-columns: 100%;
+    }
+    .reaction, .memory, .verbal, .visual {
+        margin: 0.375rem auto;
     }
     .attribution {
         grid-column: span 1;

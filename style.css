@@ -22,6 +22,7 @@ body {
 
 .wrapper {
     max-width: 90rem;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 1.25rem 3.125rem;
@@ -144,6 +145,7 @@ body {
 
 .summary button:hover {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor:pointer;
 }
 
 .attribution {
@@ -154,6 +156,9 @@ body {
     grid-column: span 2;
     text-align: center;
     color: hsl(224, 30%, 27%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .attribution>a{
     color: hsl(224, 30%, 27%);
